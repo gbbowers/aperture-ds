@@ -1,0 +1,38 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'variables';
+@import 'reset';
+
+@font-face {
+	font-family: "Gibson";
+    font-weight: normal;
+    src: url(../type/gibson-regular-webfont.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "Gibson";
+    font-weight: bold;
+    src: url(../type/gibson-semibold-webfont.woff2) format("woff2");
+    }
+    
+@font-face {
+    font-family: "Gibson";
+    font-weight: 300;
+    src: url(../type/gibson-light-webfont.woff2) format("woff2");
+    }
+
+
+body {
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  line-height: 1.5;
+  color: $textColor;
+}
+a {
+  color: $actionColor;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+      text-decoration: underline;
+  }
+}
