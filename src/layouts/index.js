@@ -3,10 +3,11 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import '../scss/index.scss'
 import Header from '../components/header'
+import SideNav from '../components/SideNav'
 
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="Page">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -16,11 +17,12 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     
-    <div className="page-content">
+    {/* <SideNav text='testing' /> */}
+    
       {children()}
-    </div>
+    
 
-    <div className="Footer">Footer</div>
+    <footer className="Footer">Footer</footer>
 
   </div>
 )
