@@ -1,6 +1,6 @@
 // @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+//@import 'reset';
 @import 'variables';
-@import 'reset';
 
 @font-face {
 	font-family: "Gibson";
@@ -20,13 +20,15 @@
     src: url(../type/gibson-light-webfont.woff2) format("woff2");
     }
 
-
+html {margin: 0; padding: 0;}
 body {
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
   font-size: 100%;
   line-height: 1.5;
   color: $textColor;
+  min-height: 2800px;
+  margin: 0;
 }
 a {
   color: $actionColor;
@@ -35,4 +37,29 @@ a {
   &:hover {
       text-decoration: underline;
   }
+}
+
+.page-content {
+    padding-top: 3.5rem;
+    .side-nav-page {
+        display: grid;
+        grid-template-columns: 2fr 10fr;
+        grid-column-gap: 1rem;
+        nav {
+            background-color: $backgroundMedium;
+            ul {
+                list-style-type: none;
+                padding-left: 24px;
+            }
+        }
+        @media (max-width: 768px) {
+            grid-template-columns: 12fr;
+            grid-column-gap: .5rem;
+            nav ul {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                
+            }
+        }
+    }
 }

@@ -1,6 +1,8 @@
 $font-stack: 'Gibson', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
+$transition: 0.8s cubic-bezier(.2, .8, .2, 1);
+
 // Colors
 // ***********
 // Core Colors. Do not use directly in apps or components.
