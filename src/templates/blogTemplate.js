@@ -13,7 +13,7 @@ export default function Template({
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        <div className="blog-post-meta">{frontmatter.date}</div>
+        <div className="blog-post-meta">Updated: {frontmatter.date}</div>
       </div>
     </div>
   );
@@ -24,7 +24,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMM DD, YYYY")
         path
         title
       }

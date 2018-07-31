@@ -2,6 +2,7 @@
 //@import 'reset';
 @import 'variables';
 
+
 @font-face {
 	font-family: "Gibson";
     font-weight: normal;
@@ -20,6 +21,9 @@
     src: url(../type/gibson-light-webfont.woff2) format("woff2");
     }
 
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600,600i');
+
+
 *, *:before, *:after {
     box-sizing: border-box;
     }
@@ -37,6 +41,12 @@ body {
   line-height: 1.5;
   color: $textColor;
 }
+
+code {
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    font-size: .85em;
+}
+
 // Gatbsy includes an extra wrapper… may not need this.
 #___gatsby {
     height: 100%;
@@ -80,5 +90,75 @@ a {
   }
 }
 
-
-
+.Main {
+    .blog-post-container {
+        .blog-post {
+            h1 {
+                font-size: 2rem;
+                line-height: 1.25;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 1.5rem;
+                line-height: 1.25;
+                margin: 2rem 0 1rem;
+            }
+            h3 {
+                font-size: 1.125rem;
+                line-height: 1.25;
+                margin: 0 0 .5rem;
+                border-bottom: 1px solid $borderLightColor;
+            }
+            p {
+                margin: 0 0 1rem;
+            }
+            table {
+                border-collapse: collapse;
+                width: 75%;
+                td {
+                    padding: .75rem;
+                    vertical-align: text-top;
+                }
+                th {
+                    text-align: left;
+                    padding: .75rem;
+                    border-bottom: 1px solid $borderDarkColor;
+                }
+                tr:nth-child(even) {
+                    background-color: $backgroundMedium;
+                }
+            }
+            .blog-post-content {
+                ul {
+                    max-width: 42rem;
+                    li {
+                        margin-bottom: 1rem;
+                        list-style-type: circle;
+                        code {
+                            background-color: $BLUE_1;
+                            padding: .125rem .25rem;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+            }
+            .blog-post-meta {
+                width: 100%;
+                padding: .5rem 1rem;
+                background-color: $BLUE_1;
+                margin-bottom: 1rem;
+                color: $lightTextColor;
+                font-size: .75rem;
+            }
+        }
+    }
+}
+code[class*="language-"], pre[class*="language-"] {
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace !important;
+    width: 75%;
+    border: none;
+    box-shadow: none;
+    &:hover {
+        width: auto;
+    }
+}

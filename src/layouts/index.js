@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import "prismjs/themes/prism-okaidia.css";
 import '../scss/index.scss'
 import Header from '../components/header'
 
