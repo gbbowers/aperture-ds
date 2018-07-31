@@ -6,3 +6,9 @@ yarn-error.log
 # Build directory
 /public
 .DS_Store
+src/type/.gibson-light-webfont.woff.icloud
+src/type/.gibson-light-webfont.woff2.icloud
+src/type/.gibson-regular-webfont.woff.icloud
+src/type/.gibson-regular-webfont.woff2.icloud
+src/type/.gibson-semibold-webfont.woff.icloud
+src/type/.gibson-semibold-webfont.woff2.icloud
