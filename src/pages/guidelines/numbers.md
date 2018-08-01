@@ -3,6 +3,10 @@ path: "/guidelines/writing/numbers"
 date: "2018-07-31"
 title: "Numbers"
 ---
+import RadButton from './src/components/RadButton.js';
+
+<RadButton text="It worked" />
+<!--  todo rework how the page page is built based on gatsby tut -->
 
 ## Description
 A user needs to see a numeric value
