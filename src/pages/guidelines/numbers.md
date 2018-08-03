@@ -23,7 +23,7 @@ Only show 0 if the value is zero. If data is not available, say **"Not available
 
 #### Use whole numbers if no fractional amount
 
-| Do | Don't |
+| <span style="color: green;">Do</span> | Don't |
 | --- | --- |
 | 0 | 0.0 |
 | 32 | 32.0|
